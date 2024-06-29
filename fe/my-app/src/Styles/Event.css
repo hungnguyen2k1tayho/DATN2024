@@ -1,0 +1,84 @@
+/* General styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.event {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eventTitle {
+  font-family: "Cursive", sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.eventList {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Event Item styling */
+.eventItem {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.eventItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.eventItem div {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.eventItem h1 {
+  font-size: 1.5em;
+  margin: 15px;
+  color: #333;
+}
+
+.eventItem h3 {
+  font-size: 1.2em;
+  margin: 0 15px 10px;
+  color: #777;
+}
+
+.eventItem p {
+  font-size: 1em;
+  margin: 0 15px 15px;
+  color: #555;
+}
+
+@media only screen and (max-width: 1300px) {
+  .eventList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .eventList {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,91 @@
+/* Centering the login container */
+.login-gr {
+  margin: auto;
+  padding: 90px;
+  justify-content: center;
+}
+
+.register-gr {
+  margin: auto;
+  padding: 90px;
+  justify-content: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+
+/* Styling the login box */
+.login-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center; /* Để căn giữa nội dung trong login box */
+}
+
+/* Centering and styling the heading */
+h2 {
+  color: #333333;
+  margin-bottom: 20px;
+  text-align: center; /* Để căn giữa tiêu đề h2 */
+}
+
+/* Styling the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Để căn giữa form theo chiều ngang */
+}
+
+/* Adding margin to form fields */
+form > div {
+  margin-bottom: 15px;
+}
+
+/* Styling labels */
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555555;
+  text-align: left; /* Để căn trái label */
+}
+
+/* Styling inputs */
+input {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%; /* Để input đầy đủ chiều rộng của form */
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Styling the button */
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto; /* Để button đầy đủ chiều rộng của form */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}

@@ -1,0 +1,96 @@
+/* General styling */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.about {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+/* About Top Section */
+.aboutTop {
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+
+.aboutTop::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.aboutTop h1 {
+  z-index: 1;
+  font-size: 3em;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* About Bottom Section */
+.aboutBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.aboutBottom h1 {
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.aboutBottom p {
+  width: 80%;
+  max-width: 1200px;
+  line-height: 1.6;
+  font-size: 1.1em;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .aboutBottom p {
+    width: 90%;
+  }
+
+  .aboutBottom h1 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .aboutTop h1 {
+    font-size: 2.5em;
+  }
+
+  .aboutBottom h1 {
+    font-size: 1.8em;
+  }
+
+  .aboutBottom p {
+    font-size: 1em;
+  }
+}
