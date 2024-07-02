@@ -9,7 +9,10 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/api/login", { email, password });
+      const response = await axios.post("/api/login", {
+        email,
+        password,
+      });
       console.log(response.data);
     } catch (error) {
       console.error("Có lỗi xảy ra khi đăng nhập!", error);
